@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: gray;
+}
+
+.header {
+    background-color: #e0e0e0;
+    padding: 20px;
+    display: flex;
+  /*  align-items: center;*/
+  justify-content: flex-end;
+
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons i {
+    font-size: 25px;
+    color: blue;
+}
+
+.social-icons i:hover {
+    color: #007bff;
+}
+
+.up-content {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.picture {
+    flex: 2;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 200px;
+    background-image: url('https://cdn.pixabay.com/photo/2018/01/23/23/17/waters-3102729_1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    flex: 1;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.content {
+    padding: 20px;
+}
+
+.text-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 15px;
+    margin: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.picture-large {
+    width: 100%;
+    height: 300px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 200px;
+    margin-bottom: 20px;
+    background-image: url('https://cdn.pixabay.com/photo/2018/05/13/20/21/lake-3397784_1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.lower-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.text-picture {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-small {
+    flex: 1 1 25%;
+    background-color: #fff;
+    padding: 15px;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.picture-small {
+    flex: 3 1 75%;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 200px;
+    background-image: url('https://cdn.pixabay.com/photo/2018/01/23/23/17/waters-3102729_1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #e0e0e0;
+    /* text-align: center; */
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+/* .footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+} */
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin: 5px 0;
+}
+
+.copyright {
+    color: #666;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .up-content {
+        flex-direction: column;
+    }
+
+    .picture {
+        height: 200px;
+    }
+
+    .text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .text-columns {
+        flex-direction: column;
+    }
+
+    .column {
+        margin: 10px 0;
+    }
+
+    .picture-large {
+        height: 200px;
+    }
+
+    .lower-content {
+        flex-direction: column;
+    }
+
+    .text-picture {
+        flex-direction: column;
+    }
+
+    .text-small {
+        margin-bottom: 20px;
+    }
+
+    .picture-small {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons i {
+        font-size: 20px;
+    }
+
+    .text-columns {
+        margin: 0;
+    }
+
+    .column {
+        margin: 10px 0;
+    }
+}
